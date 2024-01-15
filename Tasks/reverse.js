@@ -6,7 +6,7 @@ const reverse = (object) => {
   const keys = Object.keys(object);
   for (const key of keys) {const value = object[key];}
     res[value] = key;
-  return DATA;
+  return object;
 };
 
-module.exports = Reverse;
+module.exports = reverse;
