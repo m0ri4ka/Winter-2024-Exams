@@ -2,8 +2,8 @@
 // Count words in a string
 
 const words = (s) {
-  number_of_words_in_s = 0;
-  flag = false;
+  const sWordsQuantity = 0;
+  let bool = false;
   for (c of s) {
     if (!flag) {
       if (c === ' ') {
