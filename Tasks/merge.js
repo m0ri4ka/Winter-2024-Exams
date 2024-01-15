@@ -8,4 +8,4 @@ const mergeTwoObjects = (object1, object2) => {
   return object1, object2, mergedObject;  
 };
 
-module.exports = merge_two_objects;
+module.exports = mergeTwoObjects;
