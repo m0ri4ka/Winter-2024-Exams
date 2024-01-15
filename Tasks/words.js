@@ -4,8 +4,8 @@
 const words = (s) {
   const sWordsQuantity = 0;
   let bool = false;
-  for (c of s) {
-    if (!flag) {
+  for (const c of s) {
+    if (!bool) {
       if (c === ' ') {
         if (flag === true) {
           flag = false;
