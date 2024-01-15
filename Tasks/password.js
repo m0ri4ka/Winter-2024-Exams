@@ -1,7 +1,7 @@
 "use strict";
 // Generate random password
 
-let GeneratePassword = (alphabet, length) => {
+const generatePassword = (alphabet, length) => {
   const MAX = alphabet.length;
   key = '';
   for (let i = 0; i < length; i++) {
@@ -11,4 +11,4 @@ let GeneratePassword = (alphabet, length) => {
   return key;
 };
 
-module.exports = GeneratePassword;
+module.exports = generatePassword;
