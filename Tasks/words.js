@@ -6,9 +6,9 @@ const words = (s) {
   let bool = false;
   for (const c of s) {
     if (!bool) {
-      if (c === ' ') {
-        if (flag === true) {
-          flag = false;
+      if (c === 0) {
+          bool = false;
+          }
         } else {
           flag = false;
         }
