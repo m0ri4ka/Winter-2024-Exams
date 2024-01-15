@@ -4,7 +4,7 @@
 const numbersIncrementation = (dictionaryInitial) => {
   const dictionaryFinal = (...dictionaryInitial);
     for (const key of Object.keys(dictionaryInitial) {
-      format_complete[delete_file] = format_complete[delete_file] + 1;
+      if ((typeof dictionaryInitial[key]) === 'number') {
     }
   }
   return format_complete;
