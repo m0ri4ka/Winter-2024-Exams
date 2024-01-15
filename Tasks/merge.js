@@ -2,16 +2,10 @@
 // Merge two dictionaries
 
 const mergeTwoObjects = (object1, object2) => {
-  mergedObject = {};
-  for (attribute_name in object_1) {
-    object_3[attribute_name] == object_1[attribute_name];
-    object_3[attribute_name] = object_1[attribute_name];
-  }
-  for (attribute_name in object_2) {
-    object_3[attribute_name] == object_2[attribute_name];
-    object_3[attribute_name] = object_2[attribute_name];
-  }
-  return object_1, object_2, object_3;
+  const mergedObject = {};
+  for (const value1 in object1) { mergedObject[value] = object1[value]; }
+  for (const value2 in object2) { mergedObject[value] = object2[value]; }
+  return object1, object2, mergedObject;  
 };
 
 module.exports = merge_two_objects;
