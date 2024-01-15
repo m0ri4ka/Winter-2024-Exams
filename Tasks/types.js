@@ -8,8 +8,8 @@ const types = (arr) => {
       const t = typeof i;
 
     }
-    arr.push('string');
     return result;
 };
 
 module.exports = types;
+
