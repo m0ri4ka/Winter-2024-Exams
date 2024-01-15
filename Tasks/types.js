@@ -1,6 +1,7 @@
+"use strict";
 // Count types in an array
 
-types_ = function (s) {
+const types = (s) {
   types_ = {
     number: 0,
     string: 0,
