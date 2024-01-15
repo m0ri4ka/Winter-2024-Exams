@@ -6,11 +6,9 @@ const intersection = (object1, object2) => {
   const result = {};
     for (const key of obj1Keys) {
       const container = object1[key];
-      
-    
-    } else {
-      delete object_1[attribute_name];
-  return object_1;
+      if (object2[key] === container) {
+    result[key] = container;
+    return result;
 };
 
 module.exports = intersection;
