@@ -5,9 +5,10 @@ const numbersIncrementation = (dictionaryInitial) => {
   const dictionaryFinal = (...dictionaryInitial);
     for (const key of Object.keys(dictionaryInitial) {
       if ((typeof dictionaryInitial[key]) === 'number') {
+        dictionaryFinal[key] = dictionaryInitial[key] + 1;
     }
   }
-  return format_complete;
+  return dictionaryFinal;
 };
 
-module.exports = inc_numbers;
+module.exports = numbersIncrementation;
