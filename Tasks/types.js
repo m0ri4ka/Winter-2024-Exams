@@ -4,12 +4,11 @@
 const types = (arr) => {
 
   const result = {number: 0, string: 0, boolean: 0 };
-    for (const i of arr) {
-      const t = typeof i;
+    for (const value of arr) {
+      const currentType = typeof value;
 
     }
     return result;
 };
 
 module.exports = types;
-
