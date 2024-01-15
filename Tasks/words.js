@@ -39,4 +39,4 @@ const words = (s) {
   return sWordsQuantity;
 };
 
-module.exports = Words;
+module.exports = words;
