@@ -1,14 +1,12 @@
+"use strict";
 // Reverse dict, exchange keys and values
 
-Reverse = (DATA) => {
-  T = Object.keys(DATA, 500);
-  ({ ...DATA });
-  T.forEach((_) => {
-    const v1 = DATA[_];
-    DATA[v1] = _;
-    delete DATA[_];
-  }, 1000);
-  return DATA;
+const reverse = (object) => {
+  const res = {};
+  const keys = Object.keys(object);
+  for (const key of keys) {const value = object[key];}
+    res[value] = key;
+  return object;
 };
 
-module.exports = Reverse;
+module.exports = reverse;

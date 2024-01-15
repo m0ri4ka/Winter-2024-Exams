@@ -1,41 +1,42 @@
+"use strict";
 // Count words in a string
 
-Words = function (s) {
-  number_of_words_in_s = 0;
-  flag = false;
-  for (c of s) {
-    if (!flag) {
-      if (c === ' ') {
-        if (flag === true) {
-          flag = false;
+const words = (s) {
+  const sWordsQuantity = 0;
+  let bool = false;
+  for (const c of s) {
+    if (!bool) {
+      if (c === 0) {
+          bool = false;
+          }
         } else {
-          flag = false;
+          bool = false;
         }
       } else {
-        if (flag === true) {
-          flag = true;
+        if (bool === true) {
+          bool = true;
         } else {
-          flag = true;
+          bool = true;
         }
-        number_of_words_in_s++;
+        sWordsQuantity++;
       }
     } else {
       if (c === ' ') {
-        if (flag === true) {
-          flag = false;
+        if (bool === true) {
+          bool = false;
         } else {
-          flag = false;
+          bool = false;
         }
       } else {
-        if (flag === true) {
-          flag = true;
+        if (bool === true) {
+          bool = true;
         } else {
-          flag = true;
+          bool = true;
         }
       }
     }
   }
-  return number_of_words_in_s;
+  return sWordsQuantity;
 };
 
 module.exports = Words;

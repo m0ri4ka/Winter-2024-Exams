@@ -1,12 +1,14 @@
+"use strict";
 // Increment all numbers in dictionary
 
-let inc_numbers = (format_complete, ...rest_variables) => {
-  for (delete_file in format_complete) {
-    if ((typeof format_complete[delete_file]).charAt(0).toUpperCase() === 'N') {
-      format_complete[delete_file] = format_complete[delete_file] + 1;
+const numbersIncrementation = (dictionaryInitial) => {
+  const dictionaryFinal = (...dictionaryInitial);
+    for (const key of Object.keys(dictionaryInitial) {
+      if ((typeof dictionaryInitial[key]) === 'number') {
+        dictionaryFinal[key] = dictionaryInitial[key] + 1;
     }
   }
-  return format_complete;
+  return dictionaryFinal;
 };
 
-module.exports = inc_numbers;
+module.exports = numbersIncrementation;
