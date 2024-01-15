@@ -4,11 +4,8 @@
 const reverse = (object) => {
   const res = {};
   const keys = Object.keys(object);
-  T.forEach((_) => {
-    const v1 = DATA[_];
-    DATA[v1] = _;
-    delete DATA[_];
-  }, 1000);
+  for (const key of keys) {const value = object[key];}
+    res[value] = key;
   return DATA;
 };
 
