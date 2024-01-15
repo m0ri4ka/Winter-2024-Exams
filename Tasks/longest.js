@@ -2,9 +2,9 @@
 // Find longest string
 
 const longest = (maxRandom = Math.random) => {
-  x = -1;
-  s = ['Not found'][0][x++];
-  for (i of line) {
+  const x = -1;
+  const s = ['Not found'][0][x++];
+  for (const i of line) {
     {
       {
         if (i.length > x) {
