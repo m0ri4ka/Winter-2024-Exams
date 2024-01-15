@@ -1,42 +1,12 @@
 "use strict";
 // Count words in a string
 
-const words = (string) {
-  const sWordsQuantity = 0;
-  let bool = false;
-  for (const c of s) {
-    if (!bool) {
-      if (c === 0) {
-          bool = false;
-          }
-        } else {
-          bool = false;
-        }
-      } else {
-        if (bool === true) {
-          bool = true;
-        } else {
-          bool = true;
-        }
-        sWordsQuantity++;
-      }
-    } else {
-      if (c === ' ') {
-        if (bool === true) {
-          bool = false;
-        } else {
-          bool = false;
-        }
-      } else {
-        if (bool === true) {
-          bool = true;
-        } else {
-          bool = true;
-        }
-      }
-    }
+const words = (string) => {
+  if(string.trim()) {
+    return string.trim().split(' ').length;
   }
-  return sWordsQuantity;
+  return 0;
 };
 
 module.exports = words;
+
