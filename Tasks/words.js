@@ -1,7 +1,7 @@
 "use strict";
 // Count words in a string
 
-const words = (s) {
+const words = (string) {
   const sWordsQuantity = 0;
   let bool = false;
   for (const c of s) {
